@@ -3,27 +3,27 @@ import React from "react";
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <a className="logo" href="">
+            <a className="logo royal-hover" href="">
                 dave
             </a>
             <div className="menu">
                 <ul>
                     <a href="">
-                        <li>About</li>
+                        <li className="royal-hover">About</li>
                     </a>
                     <a href="">
-                        <li>Experience</li>
+                        <li className="royal-hover">Experience</li>
                     </a>
                     <a href="">
-                        <li>Projects</li>
+                        <li className="royal-hover">Projects</li>
                     </a>
                     <a href="">
-                        <li>Contact</li>
+                        <li className="royal-hover">Contact</li>
                     </a>
                 </ul>
             </div>
 
-            <a className="resume" href="">Resume</a>
+            <a className="resume royal-hover" href="">Resume</a>
         </nav>
     );
 }

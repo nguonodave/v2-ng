@@ -14,8 +14,17 @@ a {
     text-decoration: none;
 }
 
+svg:hover {
+    stroke: royalblue;
+    transition: 0.3s;
+}
+
 body {
     background-color: #28282b;
+}
+
+.royal-hover:hover {
+    color: royalblue;
 }
 
 .navbar {
@@ -37,7 +46,6 @@ body {
 }
 
 .navbar .logo:hover {
-    color: royalblue;
     transition: 0.3s;
 }
 
@@ -65,55 +73,73 @@ body {
     border-color: #eaece9;
     border-radius: 33px;
     transition: 0.3s;
-    color: royalblue;
 }
 
 .resume:hover {
-    color: royalblue;
     transition: 0.3s;
 }
 
 .below-nav {
-  margin-top: 7vh;
-  min-height: 93vh;
-  display: flex;
-  flex-direction: column;
+    margin-top: 7vh;
+    min-height: 93vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .mid-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  padding: 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 0 20%;
 }
 
 .hero-text > :not(:last-child) {
-  margin-bottom: 33px;
+    margin-bottom: 33px;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  font-weight: 900;
+    font-size: 3rem;
+    font-weight: 900;
 }
 
-.hero-greet, .hero-text span {
-  color: royalblue;
+.hero-greet,
+.hero-text span {
+    color: royalblue;
 }
 
 .hero-text span:hover {
-  text-decoration: underline;
-  transition: .3s;
+    text-decoration: underline;
+    transition: 0.3s;
 }
 
-.hero-greet, .hero-desc {
-  font-size: 21px;
+.hero-greet,
+.hero-desc {
+    font-size: 21px;
 }
 
 .hero-intro {
-  color: #eaece99d;
+    color: #eaece99d;
 }
 
 .hero-desc {
-  line-height: 30px;
+    line-height: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: red; */
+    width: 100%;
+}
+
+footer svg {
+    width: 20px;
+    height: 20px;
+}
+
+.socials > :not(:last-child) {
+    margin-right: 20px;
 }
