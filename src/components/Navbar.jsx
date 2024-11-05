@@ -1,11 +1,29 @@
 import React from "react";
-import logo from "../assets/images/davelogo.png";
 
 export default function Navbar() {
     return (
-        <div className="navbar">
-            <img src={logo} alt="" />
-            <p>Navbar</p>
-        </div>
+        <nav className="navbar">
+            <a className="logo" href="">
+                dave
+            </a>
+            <div className="menu">
+                <ul>
+                    <a href="">
+                        <li>About</li>
+                    </a>
+                    <a href="">
+                        <li>Experience</li>
+                    </a>
+                    <a href="">
+                        <li>Projects</li>
+                    </a>
+                    <a href="">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+
+            <a className="resume" href="">Resume</a>
+        </nav>
     );
 }
