@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import HeroFooter from "./components/HeroFooter";
+import Home from "./components/Home";
 
 export default function App() {
     return (
         <>
             <Navbar />
-            <HeroFooter />
+            <Home />
         </>
     );
 }
