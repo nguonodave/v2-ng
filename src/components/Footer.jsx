@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
     return (
         <footer>
-            <p>Passionately designed and built by David Ochiel</p>
+            <p>Designed and built by David Ochiel</p>
 
             <div className="socials">
                 <a

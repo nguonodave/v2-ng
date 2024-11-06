@@ -8,6 +8,7 @@
 
 :root {
   --nav-height: 7vh;
+  --nav-padding: 0 6rem;
   --background-main: #28282b;
   --primary-color-white: #eaece9;
   --secondary-color-blue: royalblue;
@@ -39,7 +40,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 33px;
+    padding: var(--nav-padding);
     height: var(--nav-height);
     top: 0;
     width: 100%;
@@ -139,7 +140,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: var(--nav-padding);
+    height: calc(var(--nav-height) + 7vh);
     /* background-color: red; */
     width: 100%;
 }
