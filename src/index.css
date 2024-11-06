@@ -6,6 +6,14 @@
     color: #eaece9;
 }
 
+:root {
+  --nav-height: 7vh;
+  --background-main: #28282b;
+  --primary-color-white: #eaece9;
+  --secondary-color-blue: royalblue;
+  --primary-border: solid 1px #eaece9;
+}
+
 ul {
     list-style: none;
 }
@@ -15,16 +23,16 @@ a {
 }
 
 svg:hover {
-    stroke: royalblue;
+    stroke: var(--secondary-color-blue);
     transition: 0.3s;
 }
 
 body {
-    background-color: #28282b;
+    background-color: var(--background-main);
 }
 
 .royal-hover:hover {
-    color: royalblue;
+    color: var(--secondary-color-blue);
 }
 
 .navbar {
@@ -32,11 +40,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 33px;
-    height: 7vh;
+    height: var(--nav-height);
     top: 0;
     width: 100%;
     position: fixed;
-    background-color: #28282b;
+    background-color: var(--background-main);
     z-index: 77;
 }
 
@@ -53,7 +61,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px #eaece9;
+    border: var(--primary-border);
     border-radius: 33px;
     height: 100%;
     padding: 3px;
@@ -70,7 +78,7 @@ body {
 }
 
 .menu li:hover {
-    border-color: #eaece9;
+    border-color: var(--primary-color-white);
     border-radius: 33px;
     transition: 0.3s;
 }
@@ -80,8 +88,8 @@ body {
 }
 
 .below-nav {
-    margin-top: 7vh;
-    min-height: 93vh;
+    margin-top: var(--nav-height);
+    min-height: calc(100vh - var(--nav-height));
     display: flex;
     flex-direction: column;
 }
@@ -105,7 +113,7 @@ body {
 
 .hero-greet,
 .hero-text span {
-    color: royalblue;
+    color: var(--secondary-color-blue);
 }
 
 .hero-text span:hover {
