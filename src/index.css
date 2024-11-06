@@ -114,6 +114,7 @@ body {
 .hero-greet,
 .hero-text span {
     color: var(--secondary-color-blue);
+    font-weight: 700;
 }
 
 .hero-text span:hover {
