@@ -58,30 +58,30 @@ body {
     transition: 0.3s;
 }
 
-.menu ul {
+.menu {
     display: flex;
     align-items: center;
     justify-content: center;
     border: var(--primary-border);
     border-radius: 33px;
-    height: 100%;
     padding: 3px;
 }
 
-.menu ul > :not(:last-child) {
-    margin-right: 7px;
-}
-
-.menu li {
+.menu .nav-link {
     border: solid 1px transparent;
     border-radius: 33px;
     padding: 7px 10px;
 }
 
-.menu li:hover {
+.menu .nav-link:hover {
     border-color: var(--primary-color-white);
     border-radius: 33px;
     transition: 0.3s;
+}
+
+.menu .nav-link.active-nav-link {
+    border: solid 1px var(--primary-color-white);
+    color: var(--secondary-color-blue);
 }
 
 .resume:hover {

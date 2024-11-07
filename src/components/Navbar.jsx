@@ -1,29 +1,38 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <Link className="logo royal-hover" to="/">
+            <NavLink className="logo royal-hover" to="/">
                 dave
-            </Link>
+            </NavLink>
+
             <div className="menu">
-                <ul>
-                    <Link to="">
-                        <li className="royal-hover">About</li>
-                    </Link>
-                    <Link to="">
-                        <li className="royal-hover">Experience</li>
-                    </Link>
-                    <Link to="/projects">
-                        <li className="royal-hover">Projects</li>
-                    </Link>
-                    <Link to="">
-                        <li className="royal-hover">Contact</li>
-                    </Link>
-                </ul>
+                <NavLink to="" className="nav-link royal-hover">
+                    About
+                </NavLink>
+
+                <NavLink to="" className="nav-link royal-hover">
+                    Experience
+                </NavLink>
+
+                <NavLink
+                    to="/projects"
+                    className={({ isActive }) =>
+                        isActive ? "nav-link royal-hover active-nav-link" : "nav-link royal-hover"
+                    }
+                >
+                    Projects
+                </NavLink>
+
+                <NavLink to="" className="nav-link royal-hover">
+                    Contact
+                </NavLink>
             </div>
 
-            <Link className="resume royal-hover" to="">Resume</Link>
+            <NavLink className="resume nav-link royal-hover" to="">
+                Resume
+            </NavLink>
         </nav>
     );
 }
