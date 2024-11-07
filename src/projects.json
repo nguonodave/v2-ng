@@ -1,29 +1,28 @@
 [
     {
         "id": 1,
-        "image": "somelink",
+        "image": "v1-ng.jpg",
         "name": "some name",
         "description": "desc",
         "tools": ["React", "JSON"],
         "links": {
             "github": "somelink",
-            "demo": "somelink"
+            "demo": "https://nguonodave.pythonanywhere.com/"
         }
     },
     {
         "id": 2,
-        "image": "somelink",
+        "image": "v1-ng.jpg",
         "name": "some name",
         "description": "desc",
         "tools": ["React", "JSON"],
         "links": {
-            "github": "somelink",
-            "demo": "somelink"
+            "github": "somelink1"
         }
     },
     {
         "id": 3,
-        "image": "somelink",
+        "image": "v1-ng.jpg",
         "name": "some name",
         "description": "desc",
         "tools": ["React", "JSON"],
@@ -34,7 +33,7 @@
     },
     {
         "id": 4,
-        "image": "somelink",
+        "image": "v1-ng.jpg",
         "name": "some name",
         "description": "desc",
         "tools": ["React", "JSON"],
@@ -45,7 +44,7 @@
     },
     {
         "id": 5,
-        "image": "somelink",
+        "image": "v1-ng.jpg",
         "name": "some name",
         "description": "desc",
         "tools": ["React", "JSON"],
@@ -56,7 +55,7 @@
     },
     {
         "id": 6,
-        "image": "somelink",
+        "image": "v1-ng.jpg",
         "name": "some name",
         "description": "desc",
         "tools": ["React", "JSON"],
