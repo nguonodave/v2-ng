@@ -204,7 +204,7 @@ body {
 }
 
 .card-body > :not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 25px;
 }
 
 .card-title {
@@ -214,7 +214,9 @@ body {
 
 .card-footer ul {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    line-height: 1.75;
 }
 
 .card-footer ul > :not(:last-child) {
