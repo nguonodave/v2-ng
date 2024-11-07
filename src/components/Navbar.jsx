@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
+    const navLinkClass = ({ isActive }) =>
+        isActive
+            ? "nav-link royal-hover active-nav-link"
+            : "nav-link royal-hover";
+
     return (
         <nav className="navbar">
             <NavLink className="logo royal-hover" to="/">
@@ -8,24 +13,19 @@ export default function Navbar() {
             </NavLink>
 
             <div className="menu">
-                <NavLink to="" className="nav-link royal-hover">
+                <NavLink to="/about" className={navLinkClass}>
                     About
                 </NavLink>
 
-                <NavLink to="" className="nav-link royal-hover">
+                <NavLink to="/experience" className={navLinkClass}>
                     Experience
                 </NavLink>
 
-                <NavLink
-                    to="/projects"
-                    className={({ isActive }) =>
-                        isActive ? "nav-link royal-hover active-nav-link" : "nav-link royal-hover"
-                    }
-                >
+                <NavLink to="/projects" className={navLinkClass}>
                     Projects
                 </NavLink>
 
-                <NavLink to="" className="nav-link royal-hover">
+                <NavLink to="/contact" className={navLinkClass}>
                     Contact
                 </NavLink>
             </div>
