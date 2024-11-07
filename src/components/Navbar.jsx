@@ -1,29 +1,29 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <a className="logo royal-hover" href="">
+            <Link className="logo royal-hover" to="/">
                 dave
-            </a>
+            </Link>
             <div className="menu">
                 <ul>
-                    <a href="">
+                    <Link to="">
                         <li className="royal-hover">About</li>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to="">
                         <li className="royal-hover">Experience</li>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to="/projects">
                         <li className="royal-hover">Projects</li>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to="">
                         <li className="royal-hover">Contact</li>
-                    </a>
+                    </Link>
                 </ul>
             </div>
 
-            <a className="resume royal-hover" href="">Resume</a>
+            <Link className="resume royal-hover" to="">Resume</Link>
         </nav>
     );
 }
