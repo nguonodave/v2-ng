@@ -2,66 +2,69 @@
     {
         "id": 1,
         "image": "v1-ng.jpg",
-        "name": "some name",
-        "description": "desc",
-        "tools": ["React", "JSON"],
+        "name": "Personal Website (v1)",
+        "description": "This is my first portfolio site built with Django dynamically.",
+        "tools": ["Django", "JS", "HTML", "CSS", "TailwindCSS"],
         "links": {
-            "github": "somelink",
+            "github": "https://github.com/nguonodave/v1-ng",
             "demo": "https://nguonodave.pythonanywhere.com/"
         }
     },
     {
         "id": 2,
-        "image": "v1-ng.jpg",
-        "name": "some name",
-        "description": "desc",
-        "tools": ["React", "JSON"],
+        "image": "ob-pred.jpg",
+        "name": "Obesity Predictor",
+        "description": "Machine learning web app that predicts whether an individual has normal weight or has any level of overweight or obesity",
+        "tools": [
+            "Numpy",
+            "Seaborn",
+            "Streamlit",
+            "Sci-kit Learn",
+            "Pandas",
+            "Matplotlib"
+        ],
         "links": {
-            "github": "somelink1"
+            "github": "https://github.com/nguonodave/obesity-predictor"
         }
     },
     {
         "id": 3,
-        "image": "v1-ng.jpg",
-        "name": "some name",
-        "description": "desc",
-        "tools": ["React", "JSON"],
+        "image": "str-art.png",
+        "name": "String Art",
+        "description": "String art is a web platform that displays the art of printable ascii characters using various font styles. It also offers both terminal and file output options.",
+        "tools": ["Go", "HTML", "CSS"],
         "links": {
-            "github": "somelink",
-            "demo": "somelink"
+            "github": "https://github.com/nguonodave/str_art"
         }
     },
     {
         "id": 4,
-        "image": "v1-ng.jpg",
-        "name": "some name",
-        "description": "desc",
-        "tools": ["React", "JSON"],
+        "image": "fetch-it.png",
+        "name": "Fetch It",
+        "description": "Fetch It is a web platform that displays manipulated data from a given API. The API majorly consist of information about different artists",
+        "tools": ["Go", "JSON", "JS", "HTML", "CSS"],
         "links": {
-            "github": "somelink",
-            "demo": "somelink"
+            "github": "https://github.com/nguonodave/fetchit"
         }
     },
     {
         "id": 5,
-        "image": "v1-ng.jpg",
-        "name": "some name",
-        "description": "desc",
-        "tools": ["React", "JSON"],
+        "image": "spark-bridge.png",
+        "name": "Spark Bridge",
+        "description": "Spark Bridge is a Django-based web application that connects customers with service providers for various services and maintenance tasks. Kindly note that it is still under development improvements.",
+        "tools": ["Django", "JS", "HTML", "CSS"],
         "links": {
-            "github": "somelink",
-            "demo": "somelink"
+            "github": "https://github.com/nguonodave/sparkbridge"
         }
     },
     {
         "id": 6,
-        "image": "v1-ng.jpg",
-        "name": "some name",
-        "description": "desc",
-        "tools": ["React", "JSON"],
+        "image": "v2-ng.png",
+        "name": "Personal Website (v2)",
+        "description": "This is my second portfolio site. I built this while learning React.",
+        "tools": ["React", "JSON", "HTML", "CSS"],
         "links": {
-            "github": "somelink",
-            "demo": "somelink"
+            "github": "https://github.com/nguonodave/v2-ng"
         }
     }
 ]
