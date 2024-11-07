@@ -7,12 +7,13 @@
 }
 
 :root {
-  --nav-height: 7vh;
-  --nav-padding: 0 6rem;
-  --background-main: #28282b;
-  --primary-color-white: #eaece9;
-  --secondary-color-blue: royalblue;
-  --primary-border: solid 1px #eaece9;
+    --nav-height: 7vh;
+    --nav-padding: 0 6rem;
+    --background-main: #28282b;
+    --primary-color-white: #eaece9;
+    --secondary-color-white: #eaece99d;
+    --secondary-color-blue: royalblue;
+    --primary-border: solid 1px #eaece9;
 }
 
 ul {
@@ -129,14 +130,14 @@ body {
 }
 
 .hero-intro {
-    color: #eaece99d;
+    color: var(--secondary-color-white);
 }
 
 .hero-desc {
     line-height: 30px;
 }
 
-footer {
+.main-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,11 +147,81 @@ footer {
     width: 100%;
 }
 
-footer svg {
+.main-footer svg {
     width: 20px;
     height: 20px;
 }
 
 .socials > :not(:last-child) {
     margin-right: 20px;
+}
+
+.projects-page-title {
+    margin-top: 33px;
+    font-size: 25px;
+}
+
+.projects-page {
+    flex-direction: column;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 21px;
+    /* background-color: red; */
+    /* padding: 0 12%; */
+    margin: 33px auto;
+    width: 100%;
+    max-width: 77rem;
+}
+
+.project-card {
+    /* background-color: #2f2f32; */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.card-body {
+    /* background-color: brown; */
+    padding: 12px;
+}
+
+.card-body > :not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.card-title {
+    /* background-color: blue; */
+    font-size: 21px;
+}
+
+.card-footer ul {
+    display: flex;
+    align-items: center;
+}
+
+.card-footer ul > :not(:last-child) {
+    margin-right: 10px;
+}
+
+.card-footer ul li {
+    color: #eaece971;
+    font-weight: 700;
 }
