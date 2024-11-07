@@ -4,39 +4,38 @@ import projects from "../projects.json";
 export default function Projects() {
     return (
         <div className="below-nav">
-            <section className="mid-content">
-                <p>ProjectsPage</p>
+            <section className="mid-content projects-page">
+                <p className="projects-page-title">Projects</p>
 
                 <div className="projects-grid">
                     {projects.map((job) => (
                         <a
-                            class="project-card"
-                            href={job.links.demo ? job.links.demo : job.links.github}
+                            className="project-card"
+                            href={
+                                job.links.demo
+                                    ? job.links.demo
+                                    : job.links.github
+                            }
                             target="_blank"
+                            key={job.id}
                         >
                             <img
                                 src={`../src/assets/images/${job.image}`}
                                 alt=""
-                                class="block"
+                                className="block"
                             />
 
-                            <div class="card-body">
-                                <nav class="card-nav">
-                                    <h1>{job.name}</h1>
-                                    <div class="card-icons">
-                                        <p>icon1</p>
-                                        <p>icon2</p>
-                                    </div>
-                                </nav>
+                            <div className="card-body">
+                                <h1 className="card-title">{job.name}</h1>
 
-                                <section class="card-desc">
+                                <section className="card-desc">
                                     <p>{job.description}</p>
                                 </section>
 
-                                <footer class="card-footer">
+                                <footer className="card-footer">
                                     <ul>
-                                        {job.tools.map((tool) => (
-                                            <li>{tool}</li>
+                                        {job.tools.map((tool, index) => (
+                                            <li key={index}>{tool}</li>
                                         ))}
                                     </ul>
                                 </footer>
