@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className="main-footer">
             <p>Designed and built by David Ochiel</p>
 
             <div className="socials">
