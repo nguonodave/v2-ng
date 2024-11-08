@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Hamburger from "./Hamburger";
 
 export default function Navbar() {
     const navLinkClass = ({ isActive }) =>
@@ -8,31 +9,37 @@ export default function Navbar() {
 
     return (
         <nav className="navbar">
-            <NavLink className="logo royal-hover" to="/">
-                dave
-            </NavLink>
-
-            <div className="menu">
-                <NavLink to="/about" className={navLinkClass}>
-                    About
+            <div className="top-menu">
+                <NavLink className="logo royal-hover" to="/">
+                    dave
                 </NavLink>
 
-                <NavLink to="/experience" className={navLinkClass}>
-                    Experience
-                </NavLink>
+                <div className="menu">
+                    <NavLink to="/about" className={navLinkClass}>
+                        About
+                    </NavLink>
 
-                <NavLink to="/projects" className={navLinkClass}>
-                    Projects
-                </NavLink>
+                    <NavLink to="/experience" className={navLinkClass}>
+                        Experience
+                    </NavLink>
 
-                <NavLink to="/contact" className={navLinkClass}>
-                    Contact
-                </NavLink>
+                    <NavLink to="/projects" className={navLinkClass}>
+                        Projects
+                    </NavLink>
+
+                    <NavLink to="/contact" className={navLinkClass}>
+                        Contact
+                    </NavLink>
+                </div>
+
+                <div className="top-left-nav">
+                    <NavLink className="resume nav-link royal-hover" to="">
+                        Resume
+                    </NavLink>
+
+                    <Hamburger />
+                </div>
             </div>
-
-            <NavLink className="resume nav-link royal-hover" to="">
-                Resume
-            </NavLink>
         </nav>
     );
 }

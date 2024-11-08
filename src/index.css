@@ -37,7 +37,7 @@ body {
     color: var(--secondary-color-blue);
 }
 
-.navbar {
+.navbar .top-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,6 +83,16 @@ body {
 .menu .nav-link.active-nav-link {
     border: solid 1px var(--primary-color-white);
     color: var(--secondary-color-blue);
+}
+
+.top-left-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-left-nav > :not(:last-child) {
+    margin-right: 33px;
 }
 
 .resume:hover {
