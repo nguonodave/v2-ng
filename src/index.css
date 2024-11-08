@@ -9,11 +9,13 @@
 :root {
     --nav-height: 7vh;
     --nav-padding: 0 6rem;
-    --background-main: #28282b;
+    --primary-background-black: #28282b;
+    --secondary-background-black: rgb(66, 66, 66);
     --primary-color-white: #eaece9;
     --secondary-color-white: #eaece99d;
     --secondary-color-blue: royalblue;
     --primary-border: solid 1px #eaece9;
+    --primary-boxshadow: 0 4px 12px rgba(0, 0, 0, 0.7);
 }
 
 ul {
@@ -30,7 +32,7 @@ svg:hover {
 }
 
 body {
-    background-color: var(--background-main);
+    background-color: var(--primary-background-black);
 }
 
 .royal-hover:hover {
@@ -46,8 +48,8 @@ body {
     top: 0;
     width: 100%;
     position: fixed;
-    background-color: var(--background-main);
-    z-index: 77;
+    background-color: var(--primary-background-black);
+    z-index: 7;
 }
 
 .navbar .logo {
@@ -93,6 +95,35 @@ body {
 
 .top-left-nav > :not(:last-child) {
     margin-right: 33px;
+}
+
+.side-menu {
+    z-index: 12;
+    position: absolute;
+    background-color: var(--secondary-background-black);
+    box-shadow: var(--primary-boxshadow);
+    width: 40%;
+    max-width: 33rem;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    /* display: none; */
+}
+
+.side-menu .content {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.side-menu .content > :not(:last-child) {
+    margin-bottom: 77px;
 }
 
 .resume:hover {
@@ -185,13 +216,13 @@ body {
 }
 
 .project-card {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--secondary-background-black);
     border-radius: 7px;
     transition: transform 0.3s;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    box-shadow: var(--primary-boxshadow);
     height: 100%;
 }
 

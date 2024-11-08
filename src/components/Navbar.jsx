@@ -40,6 +40,26 @@ export default function Navbar() {
                     <Hamburger />
                 </div>
             </div>
+
+            <div className="side-menu">
+                <div className="content">
+                    <NavLink to="/about" className="">
+                        About
+                    </NavLink>
+
+                    <NavLink to="/experience" className="">
+                        Experience
+                    </NavLink>
+
+                    <NavLink to="/projects" className="">
+                        Projects
+                    </NavLink>
+                    
+                    <NavLink to="/contact" className="">
+                        Contact
+                    </NavLink>
+                </div>
+            </div>
         </nav>
     );
 }
