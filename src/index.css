@@ -219,6 +219,18 @@ body {
     width: 100%;
 }
 
+@media screen and (max-width: 678px) {
+    .main-footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-footer p {
+        margin-bottom: 12px;
+        text-align: center;
+    }
+}
+
 .main-footer svg {
     width: 20px;
     height: 20px;
