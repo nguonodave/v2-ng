@@ -5,7 +5,7 @@ export default function Projects() {
     return (
         <div className="below-nav">
             <section className="mid-content projects-page">
-                <p className="projects-page-title">Projects</p>
+                <p className="page-title">Projects</p>
 
                 <div className="projects-grid">
                     {projects.map((job) => (
