@@ -174,7 +174,13 @@ body {
     align-items: center;
     justify-content: center;
     flex: 1;
-    padding: 0 20%;
+    padding: 0 21%;
+}
+
+@media screen and (max-width: 1066px) {
+    .mid-content {
+        padding: 0 12%;
+    }
 }
 
 .hero-text > :not(:last-child) {
@@ -220,7 +226,8 @@ body {
     width: 100%;
 }
 
-.main-footer p, .main-footer svg{
+.main-footer p,
+.main-footer svg {
     color: var(--secondary-color-white);
     stroke: var(--secondary-color-white);
 }
