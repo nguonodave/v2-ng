@@ -82,6 +82,12 @@ body {
     padding: 3px;
 }
 
+@media screen and (max-width: 930px) {
+    .menu {
+        display: none;
+    }
+}
+
 .menu .nav-link {
     border: solid 1px transparent;
     border-radius: 33px;
