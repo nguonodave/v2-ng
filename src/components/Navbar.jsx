@@ -1,11 +1,38 @@
 import { NavLink } from "react-router-dom";
-import Hamburger from "./Hamburger";
+import { useState, useEffect } from "react";
+import { Divide as Ham } from "hamburger-react";
 
 export default function Navbar() {
     const navLinkClass = ({ isActive }) =>
         isActive
             ? "nav-link royal-hover active-nav-link"
             : "nav-link royal-hover";
+
+    const [sideMenuOpen, setSideMenuOpen] = useState(false);
+
+    // sync html elements behavior when the side menu is open/closed
+    useEffect(() => {
+        const html = document.querySelector("html");
+        const belowNav = document.querySelector(".below-nav");
+        const logo = document.querySelector(".logo");
+
+        if (sideMenuOpen) {
+            html.classList.add("overflow-y-hidden");
+            belowNav.classList.add("blur-active");
+            logo.classList.add("blur-active");
+        } else {
+            html.classList.remove("overflow-y-hidden");
+            belowNav.classList.remove("blur-active");
+            logo.classList.remove("blur-active");
+        }
+
+        // cleanup the classes when the component unmounts or sideMenuOpen changes
+        return () => {
+            html.classList.remove("overflow-y-hidden");
+            belowNav.classList.remove("blur-active");
+            logo.classList.remove("blur-active");
+        };
+    }, [sideMenuOpen]);
 
     return (
         <nav className="navbar">
@@ -37,11 +64,17 @@ export default function Navbar() {
                         Resume
                     </NavLink>
 
-                    <Hamburger />
+                    <div className="hamburger">
+                        <Ham
+                            size={25}
+                            toggled={sideMenuOpen}
+                            toggle={setSideMenuOpen}
+                        />
+                    </div>
                 </div>
             </div>
 
-            <div className="side-menu">
+            <div className={`side-menu ${sideMenuOpen ? "active" : ""}`}>
                 <div className="content">
                     <NavLink to="/about" className="">
                         About
@@ -54,7 +87,7 @@ export default function Navbar() {
                     <NavLink to="/projects" className="">
                         Projects
                     </NavLink>
-                    
+
                     <NavLink to="/contact" className="">
                         Contact
                     </NavLink>
