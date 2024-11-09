@@ -7,7 +7,7 @@
 }
 
 :root {
-    --nav-height: 7vh;
+    --nav-height: 77px;
     --nav-padding: 0 6rem;
     --primary-background-black: #28282b;
     --secondary-background-black: rgb(66, 66, 66);
@@ -218,6 +218,11 @@ body {
     height: calc(var(--nav-height) + 7vh);
     /* background-color: red; */
     width: 100%;
+}
+
+.main-footer p, .main-footer svg{
+    color: var(--secondary-color-white);
+    stroke: var(--secondary-color-white);
 }
 
 @media screen and (max-width: 678px) {
