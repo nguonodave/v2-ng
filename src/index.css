@@ -39,17 +39,21 @@ body {
     color: var(--secondary-color-blue);
 }
 
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 7;
+    height: var(--nav-height);
+    padding: var(--nav-padding);
+    background-color: var(--primary-background-black);
+}
+
 .navbar .top-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--nav-padding);
-    height: var(--nav-height);
-    top: 0;
-    width: 100%;
-    position: fixed;
-    background-color: var(--primary-background-black);
-    z-index: 7;
+    height: 100%;
 }
 
 .navbar .logo {
@@ -95,6 +99,10 @@ body {
 
 .top-left-nav > :not(:last-child) {
     margin-right: 33px;
+}
+
+.hamburger {
+    z-index: 21;
 }
 
 .side-menu {
