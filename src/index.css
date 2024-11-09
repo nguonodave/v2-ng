@@ -187,6 +187,41 @@ body {
     margin-bottom: 33px;
 }
 
+.projects-page, .contact-page, .experience-page {
+    flex-direction: column;
+}
+
+.contact-page {
+    text-align: center;
+    /* background-color: blue; */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.contact-page > :not(:last-child) {
+    margin-bottom: 66px;
+}
+
+.contact-page h1 {
+    font-size: 3rem;
+}
+
+.contact-page .contact-desc {
+    line-height: 33px;
+    font-size: 21px;
+}
+
+.chat-btn {
+    border: var(--primary-border);
+    border-radius: 33px;
+    padding: 12px;
+}
+
+.chat-btn:hover {
+    color: var(--secondary-color-blue);
+    transition: .3s;
+}
+
 .hero-text h1 {
     font-size: 3rem;
     font-weight: 900;
@@ -256,10 +291,6 @@ body {
 .page-title {
     margin-top: 33px;
     font-size: 25px;
-}
-
-.projects-page {
-    flex-direction: column;
 }
 
 .projects-grid {

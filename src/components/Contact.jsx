@@ -5,8 +5,8 @@ export default function Contact() {
     return (
         <div>
             <div className="below-nav">
-                <section className="mid-content projects-page">
-                    <p className="page-title">Holla Me Up.</p>
+                <section className="mid-content contact-page">
+                    <h1 className="page-title">Hit Me Up.</h1>
 
                     <div className="contact-desc">
                         <p>
@@ -16,7 +16,7 @@ export default function Contact() {
                         </p>
                     </div>
 
-                    <NavLink to="mailto:nguonodave@gmail.com">HMU</NavLink>
+                    <NavLink to="mailto:nguonodave@gmail.com" className="chat-btn" >Let's Chat</NavLink>
                 </section>
 
                 <Footer />
