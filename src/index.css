@@ -130,9 +130,9 @@ body {
     position: absolute;
     background-color: var(--secondary-background-black);
     box-shadow: var(--primary-boxshadow);
-    width: 40%;
+    width: 77%;
     max-width: 33rem;
-    min-width: 21rem;
+    /* min-width: 21rem; */
     height: 100vh;
     top: 0;
     right: -77%;
