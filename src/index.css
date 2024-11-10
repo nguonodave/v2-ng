@@ -362,9 +362,10 @@ body {
     font-weight: 700;
 }
 
-/* .experience-page {
-    background-color: red;
-} */
+.experience-page {
+    /* background-color: red; */
+    justify-content: flex-start;
+}
 
 .experience-page > :not(:last-child){
     margin-bottom: 33px;
@@ -373,7 +374,7 @@ body {
 .slider {
     /* background-color: white; */
     position: relative;
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
     border: var(--primary-border);
     border-radius: 33px;
@@ -443,4 +444,13 @@ body {
 
 .exp-details {
     align-self: flex-start;
+}
+
+.exp-details {
+    /* background-color: blue; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
