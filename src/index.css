@@ -187,7 +187,9 @@ body {
     margin-bottom: 33px;
 }
 
-.projects-page, .contact-page, .experience-page {
+.projects-page,
+.contact-page,
+.experience-page {
     flex-direction: column;
 }
 
@@ -219,7 +221,7 @@ body {
 
 .chat-btn:hover {
     color: var(--secondary-color-blue);
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .hero-text h1 {
@@ -367,7 +369,7 @@ body {
     justify-content: flex-start;
 }
 
-.experience-page > :not(:last-child){
+.experience-page > :not(:last-child) {
     margin-bottom: 33px;
 }
 
@@ -404,14 +406,23 @@ body {
 
 .slider .icon:first-child {
     left: 0;
-    background: linear-gradient(90deg, var(--primary-background-black) 70%, transparent);
+    background: linear-gradient(
+        90deg,
+        var(--primary-background-black) 70%,
+        transparent
+    );
     /* background: linear-gradient(90deg, red 70%, transparent); */
+    display: none;
 }
 
 .slider .icon:last-child {
     right: 0;
     justify-content: flex-end;
-    background: linear-gradient(-90deg, var(--primary-background-black) 70%, transparent);
+    background: linear-gradient(
+        -90deg,
+        var(--primary-background-black) 70%,
+        transparent
+    );
     /* background: linear-gradient(-90deg, red 70%, transparent); */
 }
 
@@ -427,19 +438,35 @@ body {
     display: flex;
     gap: 12px;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.slider .tabs.dragging {
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.tabs.dragging .tab {
+    user-select: none;
+    pointer-events: none;
 }
 
 .slider .tabs .tab {
     cursor: pointer;
     white-space: nowrap;
-    border: solid 1px transparent;
+    background-color: var(--secondary-color-white);
+    color: var(--primary-background-black);
     border-radius: 33px;
     padding: 7px 12px;
 }
 
+.slider .tabs .tab.tab-active, .slider .tabs .tab.tab-active:hover {
+    background-color: var(--secondary-color-blue);
+    color: var(--primary-color-white);
+}
+
 .slider .tabs .tab:hover {
-    background-color: var(--secondary-color-white);
-    color: var(--primary-background-black);
+    background-color: var(--primary-color-white);
     transition: 0.3s;
 }
 

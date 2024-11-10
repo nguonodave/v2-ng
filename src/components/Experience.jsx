@@ -4,17 +4,45 @@ import Footer from "../components/Footer";
 export default function Experience() {
     useEffect(() => {
         const tabs = document.querySelector(".tabs");
-
+        const tab = document.querySelectorAll(".tab");
+        const sliderArrows = document.querySelectorAll(".icon svg");
         let isDragging = false;
+
+        const arrowVisibility = () => {
+            let scrollVal = Math.round(tabs.scrollLeft);
+            let maxScrollableWidth = tabs.scrollWidth - tabs.clientWidth;
+            sliderArrows[0].parentElement.style.display =
+                scrollVal > 0 ? "flex" : "none";
+
+            sliderArrows[1].parentElement.style.display =
+                maxScrollableWidth > scrollVal ? "flex" : "none";
+        };
+
+        sliderArrows.forEach((icon) => {
+            icon.addEventListener("click", () => {
+                tabs.scrollLeft += icon.id === "left" ? -210 : 210;
+                // arrowVisibility();
+                setTimeout(() => arrowVisibility(), 33);
+            });
+        });
+
+        tab.forEach((oneTab) => {
+            oneTab.addEventListener("click", () => {
+                tabs.querySelector(".tab-active").classList.remove("tab-active")
+                oneTab.classList.add("tab-active")
+            });
+        });
 
         const dragging = (e) => {
             if (!isDragging) return;
-            console.log("drrr....")
+            tabs.classList.add("dragging");
             tabs.scrollLeft -= e.movementX;
+            arrowVisibility();
         };
 
         const dragStop = () => {
             isDragging = false;
+            tabs.classList.remove("dragging");
         };
 
         tabs.addEventListener("mousedown", () => (isDragging = true));
@@ -41,6 +69,7 @@ export default function Experience() {
                             strokeWidth="1.5"
                             stroke="currentColor"
                             className="size-6"
+                            id="left"
                         >
                             <path
                                 strokeLinecap="round"
@@ -50,7 +79,7 @@ export default function Experience() {
                         </svg>
                     </div>
                     <ul className="tabs">
-                        <li className="tab">this is co. 1</li>
+                        <li className="tab tab-active">this is co. 1</li>
                         <li className="tab">this is co. 2</li>
                         <li className="tab">this is co. 3</li>
                         <li className="tab">this is co. 4</li>
@@ -66,6 +95,7 @@ export default function Experience() {
                             strokeWidth="1.5"
                             stroke="currentColor"
                             className="size-6"
+                            id="right"
                         >
                             <path
                                 strokeLinecap="round"
