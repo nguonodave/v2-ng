@@ -52,6 +52,12 @@ body {
     background-color: var(--primary-background-black);
 }
 
+@media screen and (max-width: 690px) {
+    .navbar {
+        padding: 0 33px;
+    }
+}
+
 .navbar .top-menu {
     display: flex;
     align-items: center;
