@@ -15,15 +15,18 @@ export default function Navbar() {
         const html = document.querySelector("html");
         const belowNav = document.querySelector(".below-nav");
         const logo = document.querySelector(".logo");
+        const resume = document.querySelector(".resume");
 
         if (sideMenuOpen) {
             html.classList.add("overflow-y-hidden");
             belowNav.classList.add("blur-active");
             logo.classList.add("blur-active");
+            resume.classList.add("blur-active");
         } else {
             html.classList.remove("overflow-y-hidden");
             belowNav.classList.remove("blur-active");
             logo.classList.remove("blur-active");
+            resume.classList.remove("blur-active");
         }
 
         // cleanup the classes when the component unmounts or sideMenuOpen changes
@@ -31,8 +34,13 @@ export default function Navbar() {
             html.classList.remove("overflow-y-hidden");
             belowNav.classList.remove("blur-active");
             logo.classList.remove("blur-active");
+            resume.classList.remove("blur-active");
         };
     }, [sideMenuOpen]);
+
+    const closeSideMenu = () => {
+        setSideMenuOpen(false);
+    };
 
     return (
         <nav className="navbar">
@@ -76,19 +84,27 @@ export default function Navbar() {
 
             <div className={`side-menu ${sideMenuOpen ? "active" : ""}`}>
                 <div className="content">
-                    <NavLink to="/about" className="">
+                    <NavLink to="/about" className="" onClick={closeSideMenu}>
                         About
                     </NavLink>
 
-                    <NavLink to="/experience" className="">
+                    <NavLink
+                        to="/experience"
+                        className=""
+                        onClick={closeSideMenu}
+                    >
                         Experience
                     </NavLink>
 
-                    <NavLink to="/projects" className="">
+                    <NavLink
+                        to="/projects"
+                        className=""
+                        onClick={closeSideMenu}
+                    >
                         Projects
                     </NavLink>
 
-                    <NavLink to="/contact" className="">
+                    <NavLink to="/contact" className="" onClick={closeSideMenu}>
                         Contact
                     </NavLink>
                 </div>
