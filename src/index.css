@@ -374,7 +374,7 @@ body {
 .slider {
     /* background-color: white; */
     position: relative;
-    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
     border: var(--primary-border);
     border-radius: 33px;
@@ -423,12 +423,13 @@ body {
     margin-right: 7px;
 }
 
-.slider ul {
+.slider .tabs {
     display: flex;
     gap: 12px;
+    overflow-x: hidden;
 }
 
-.slider ul .tab {
+.slider .tabs .tab {
     cursor: pointer;
     white-space: nowrap;
     border: solid 1px transparent;
@@ -436,7 +437,7 @@ body {
     padding: 7px 12px;
 }
 
-.slider ul .tab:hover {
+.slider .tabs .tab:hover {
     background-color: var(--secondary-color-white);
     color: var(--primary-background-black);
     transition: 0.3s;

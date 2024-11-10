@@ -1,6 +1,32 @@
+import { useEffect } from "react";
 import Footer from "../components/Footer";
 
 export default function Experience() {
+    useEffect(() => {
+        const tabs = document.querySelector(".tabs");
+
+        let isDragging = false;
+
+        const dragging = (e) => {
+            if (!isDragging) return;
+            console.log("drrr....")
+            tabs.scrollLeft -= e.movementX;
+        };
+
+        const dragStop = () => {
+            isDragging = false;
+        };
+
+        tabs.addEventListener("mousedown", () => (isDragging = true));
+        tabs.addEventListener("mousemove", dragging);
+        document.addEventListener("mouseup", dragStop);
+
+        // // cleanup the classes when the component unmounts
+        // return () => {
+        //     console.log("hey")
+        // };
+    });
+
     return (
         <div className="below-nav">
             <section className="mid-content experience-page">
@@ -23,7 +49,7 @@ export default function Experience() {
                             />
                         </svg>
                     </div>
-                    <ul>
+                    <ul className="tabs">
                         <li className="tab">this is co. 1</li>
                         <li className="tab">this is co. 2</li>
                         <li className="tab">this is co. 3</li>
