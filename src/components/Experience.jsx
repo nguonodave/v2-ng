@@ -111,20 +111,33 @@ export default function Experience() {
 
                 {experiences.map((experience) => (
                     <div key={experience.id} className="exp-details">
-                        <h1>
-                            {experience.title}
-                            <span>
-                                <a href={experience.companyLink} target="_blank"> @ {experience.companyName}</a>
+                        <p className="exp-header">
+                            <span className="exp-title">
+                                {experience.title}
                             </span>
-                        </h1>
 
-                        <p>{experience.period}</p>
+                            <span className="exp-arrow">&#8594;</span>
+
+                            <span>
+                                <a
+                                    className="exp-company"
+                                    href={experience.companyLink}
+                                    target="_blank"
+                                >
+                                    {experience.companyName}
+                                </a>
+                            </span>
+                        </p>
+
+                        <p className="exp-period">{experience.period}</p>
 
                         <div className="exp-desc">
                             <ul className="exp-list">
-                                {experience.experienceGains.map((experienceGain, index) => (
-                                    <li key={index}>{experienceGain}</li>
-                                ))}
+                                {experience.experienceGains.map(
+                                    (experienceGain, index) => (
+                                        <li key={index}>{experienceGain}</li>
+                                    )
+                                )}
                             </ul>
                         </div>
                     </div>
