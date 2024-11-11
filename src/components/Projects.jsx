@@ -8,33 +8,33 @@ export default function Projects() {
                 <p className="page-title">Projects</p>
 
                 <div className="projects-grid">
-                    {projects.map((job) => (
+                    {projects.map((project) => (
                         <a
                             className="project-card"
                             href={
-                                job.links.demo
-                                    ? job.links.demo
-                                    : job.links.github
+                                project.links.demo
+                                    ? project.links.demo
+                                    : project.links.github
                             }
                             target="_blank"
-                            key={job.id}
+                            key={project.id}
                         >
                             <img
-                                src={`../src/assets/images/${job.image}`}
+                                src={`../src/assets/images/${project.image}`}
                                 alt=""
                                 className="block"
                             />
 
                             <div className="card-body">
-                                <h1 className="card-title">{job.name}</h1>
+                                <h1 className="card-title">{project.name}</h1>
 
                                 <section className="card-desc">
-                                    <p>{job.description}</p>
+                                    <p>{project.description}</p>
                                 </section>
 
                                 <footer className="card-footer">
                                     <ul>
-                                        {job.tools.map((tool, index) => (
+                                        {project.tools.map((tool, index) => (
                                             <li key={index}>{tool}</li>
                                         ))}
                                     </ul>
