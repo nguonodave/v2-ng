@@ -10,6 +10,24 @@ export default function Navbar() {
 
     const [sideMenuOpen, setSideMenuOpen] = useState(false);
 
+    useEffect(() => {
+        function handleClick(event) {
+            // Check if click target is outside the side-menu
+            const isSideMenu = event.target.closest('.side-menu');
+            const isHamburger = event.target.closest('.hamburger');
+            
+            // If click is outside both side-menu and hamburger, close the menu
+            if (!isSideMenu && !isHamburger && sideMenuOpen) {
+                setSideMenuOpen(false);
+            }
+        }
+
+        document.addEventListener('click', handleClick);
+        return () => {
+            document.removeEventListener('click', handleClick);
+        };
+    }, [sideMenuOpen]);
+
     // sync html elements behavior when the side menu is open/closed
     useEffect(() => {
         const html = document.querySelector("html");
