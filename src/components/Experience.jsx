@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import experiences from "../experiences.json";
 import Footer from "../components/Footer";
 
 export default function Experience() {
@@ -28,8 +29,10 @@ export default function Experience() {
 
         tab.forEach((oneTab) => {
             oneTab.addEventListener("click", () => {
-                tabs.querySelector(".tab-active").classList.remove("tab-active")
-                oneTab.classList.add("tab-active")
+                tabs.querySelector(".tab-active").classList.remove(
+                    "tab-active"
+                );
+                oneTab.classList.add("tab-active");
             });
         });
 
@@ -106,28 +109,26 @@ export default function Experience() {
                     </div>
                 </div>
 
-                <div className="exp-details">
-                    <h1>
-                        Some Title
-                        <span>
-                            <a href=""> @ company</a>
-                        </span>
-                    </h1>
+                {experiences.map((experience) => (
+                    <div className="exp-details">
+                        <h1>
+                            {experience.title}
+                            <span>
+                                <a href={experience.companyLink} target="_blank"> @ {experience.companyName}</a>
+                            </span>
+                        </h1>
 
-                    <p>start duration - end duration</p>
+                        <p>{experience.period}</p>
 
-                    <div className="exp-desc">
-                        <ul>
-                            <li>xp 1</li>
-                            <li>xp 2</li>
-                            <li>xp 3</li>
-                            <li>xp 4</li>
-                            <li>xp 5</li>
-                            <li>xp 6</li>
-                            <li>xp 7</li>
-                        </ul>
+                        <div className="exp-desc">
+                            <ul>
+                                {experience.experienceGains.map((experienceGain) => (
+                                    <li>{experienceGain}</li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                ))}
             </section>
             <Footer />
         </div>

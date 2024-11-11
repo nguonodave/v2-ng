@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "title": "industrial Attachee",
+        "title": "Industrial Attachee",
         "companyName": " Synergy Informatics",
         "companyLink": "https://synergyinformatics.co.ke/",
         "period": "May 2022 - July 2022",
-        "experiences": [
+        "experienceGains": [
             "Developed and maintained web applications using a variety of programming languages and frameworks, including HTML, CSS, JavaScript, and Django.",
             "Conducted quality assurance testing and debugging to ensure website functionality and resolved any issues that arose.",
             "Designed and developed custom content management systems (CMS) to allow easy update and management of the website content.",
@@ -18,7 +18,7 @@
         "companyName": "Dulchori Fitness",
         "companyLink": "https://dulchorifitness.com/",
         "period": "April 2023 - April 2024",
-        "experiences": [
+        "experienceGains": [
             "Designed and developed a responsive front-end interface using HTML, CSS, and JavaScript.",
             "Designed the application architecture and its database schema.",
             "Created custom Django templates to generate dynamic web pages based on user input.",
