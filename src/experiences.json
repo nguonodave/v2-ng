@@ -1,18 +1,5 @@
 [
     {
-        "id": 1,
-        "title": "Industrial Attachee",
-        "companyName": "Synergy Informatics",
-        "companyLink": "https://synergyinformatics.co.ke/",
-        "period": "May 2022 - July 2022",
-        "experienceGains": [
-            "Developed and maintained web applications using a variety of programming languages and frameworks, including HTML, CSS, JavaScript, and Django.",
-            "Conducted quality assurance testing and debugging to ensure website functionality and resolved any issues that arose.",
-            "Designed and developed custom content management systems (CMS) to allow easy update and management of the website content.",
-            "Got introduced to the world of data (Data Science/Machine Learning/Artificial Intelligence)."
-        ]
-    },
-    {
         "id": 2,
         "title": "Full Stack Engineer (Contractor)",
         "companyName": "Dulchori Fitness",
@@ -24,6 +11,19 @@
             "Created custom Django templates to generate dynamic web pages based on user input.",
             "Implemented user authentication and authorization using Django's built-in authentication framework.",
             "Providing ongoing maintenance and support, including bug fixes, feature enhancements, and performance optimizations."
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Industrial Attachee",
+        "companyName": "Synergy Informatics",
+        "companyLink": "https://synergyinformatics.co.ke/",
+        "period": "May 2022 - July 2022",
+        "experienceGains": [
+            "Developed and maintained web applications using a variety of programming languages and frameworks, including HTML, CSS, JavaScript, and Django.",
+            "Conducted quality assurance testing and debugging to ensure website functionality and resolved any issues that arose.",
+            "Designed and developed custom content management systems (CMS) to allow easy update and management of the website content.",
+            "Got introduced to the world of data (Data Science/Machine Learning/Artificial Intelligence)."
         ]
     }
 ]
