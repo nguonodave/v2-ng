@@ -82,13 +82,18 @@ export default function Experience() {
                         </svg>
                     </div>
                     <ul className="tabs">
-                        <li className="tab tab-active">this is co. 1</li>
-                        <li className="tab">this is co. 2</li>
+                        {experiences.map((experience) => (
+                            <li className={`tab ${experience.id === 1 ? "tab-active" : ""}`} key={experience.id}>
+                                {experience.companyName}
+                            </li>
+                        ))}
+
+                        {/* <li className="tab">this is co. 2</li>
                         <li className="tab">this is co. 3</li>
                         <li className="tab">this is co. 4</li>
                         <li className="tab">this is co. 5</li>
                         <li className="tab">this is co. 6</li>
-                        <li className="tab">this is co. 7</li>
+                        <li className="tab">this is co. 7</li> */}
                     </ul>
                     <div className="icon">
                         <svg
