@@ -110,7 +110,7 @@ export default function Experience() {
                 </div>
 
                 {experiences.map((experience) => (
-                    <div className="exp-details">
+                    <div key={experience.id} className="exp-details">
                         <h1>
                             {experience.title}
                             <span>
@@ -121,9 +121,9 @@ export default function Experience() {
                         <p>{experience.period}</p>
 
                         <div className="exp-desc">
-                            <ul>
-                                {experience.experienceGains.map((experienceGain) => (
-                                    <li>{experienceGain}</li>
+                            <ul className="exp-list">
+                                {experience.experienceGains.map((experienceGain, index) => (
+                                    <li key={index}>{experienceGain}</li>
                                 ))}
                             </ul>
                         </div>
