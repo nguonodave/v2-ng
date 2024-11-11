@@ -1,8 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import experiences from "../experiences.json";
 import Footer from "../components/Footer";
 
 export default function Experience() {
+    const [id, setId] = useState(1);
+
+    function updateId(id) {
+        setId(id)
+    }
+
     useEffect(() => {
         const tabs = document.querySelector(".tabs");
         const tab = document.querySelectorAll(".tab");
@@ -83,7 +89,13 @@ export default function Experience() {
                     </div>
                     <ul className="tabs">
                         {experiences.map((experience) => (
-                            <li className={`tab ${experience.id === 1 ? "tab-active" : ""}`} key={experience.id}>
+                            <li
+                                onClick={() => updateId(experience.id)}
+                                className={`tab ${
+                                    experience.id === 1 ? "tab-active" : ""
+                                }`}
+                                key={experience.id}
+                            >
                                 {experience.companyName}
                             </li>
                         ))}
@@ -115,7 +127,7 @@ export default function Experience() {
                 </div>
 
                 {experiences.map((experience) => (
-                    <div key={experience.id} className="exp-details">
+                    <div key={experience.id} className={`exp-details ${id === experience.id ? "active" : ""}`}>
                         <p className="exp-header">
                             <span className="exp-title">
                                 {experience.title}

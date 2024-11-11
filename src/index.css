@@ -484,10 +484,14 @@ body {
 .exp-details {
     /* background-color: blue; */
     flex: 1;
+    display: none;
+    width: 100%;
+}
+
+.exp-details.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
 }
 
 .exp-header {
