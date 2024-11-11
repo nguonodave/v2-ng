@@ -6,14 +6,14 @@ export default function Home() {
         <div className="below-nav">
             <section className="mid-content hero">
                 <div className="hero-text">
-                    <p className="hero-greet">Hey there, Dave here.</p>
+                    <p className="hero-greet">Apprentice Software Engineer</p>
                     <h1 className="hero-name">David Ochiel</h1>
                     <h1 className="hero-intro">
                         I'm passionate about building digital solutions.
                     </h1>
                     <p className="hero-desc">
                         Currently mastering Golang and JavaScript at{" "}
-                        <a href="https://www.zone01kisumu.ke/">
+                        <a href="https://www.zone01kisumu.ke/" target="_blank">
                             <span>Zone01 Kisumu</span>
                         </a>
                         . I love creating clean, efficient, and dynamic software
