@@ -275,10 +275,16 @@ body {
     stroke: var(--secondary-color-white);
 }
 
+.main-footer svg:hover {
+    stroke: var(--secondary-color-blue);
+    transition: 0.3s;
+}
+
 @media screen and (max-width: 678px) {
     .main-footer {
         flex-direction: column;
         justify-content: center;
+        padding: 0 7px;
     }
 
     .main-footer p {
