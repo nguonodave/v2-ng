@@ -1,9 +1,25 @@
 [
     {
+        "id": 3,
+        "title": "Apprentice Software Engineer",
+        "companyName": "Zone01 Kisumu",
+        "companyLink": "https://www.zone01kisumu.ke/",
+        "period": "April 2024 - Present",
+        "experienceGains": [
+            "Collaborating on coding projects with peers, developing solutions in an agile, project-based environment.",
+            "Developing problem-solving and debugging skills by tackling real-world programming challenges.",
+            "Refining time management and self-discipline by adhering to project deadlines.",
+            "Enhancing teamwork and communication skills through peer code reviews and collaborative project development.",
+            "Participating in hackathons and safeguarding events, demonstrating resilience, teamwork, and the ability to perform under pressure.",
+            "Strengthening version control skills by using Git for collaboration and maintaining code repositories with peers.",
+            "Working on independent projects to learn new technologies and programming languages through self-guided, hands-on projects."
+        ]
+    },
+    {
         "id": 2,
         "title": "Full Stack Engineer (Contractor)",
         "companyName": "Dulchori Fitness",
-        "companyLink": "https://dulchorifitness.com/",
+        "companyLink": "https://www.dulchorifitness.com/",
         "period": "April 2023 - April 2024",
         "experienceGains": [
             "Designed and developed a responsive front-end interface using HTML, CSS, and JavaScript.",
