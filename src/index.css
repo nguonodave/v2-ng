@@ -264,6 +264,10 @@ body {
         font-size: 21px;
     }
 
+    .mid-content {
+        padding: 0 7%;
+    }
+
     .hero-text > :not(:last-child) {
         margin-bottom: 21px;
     }
