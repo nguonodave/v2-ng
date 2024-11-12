@@ -12,26 +12,10 @@ export default function Experience() {
     useEffect(() => {
         const tabs = document.querySelector(".tabs");
         const tab = document.querySelectorAll(".tab");
-        const sliderArrows = document.querySelectorAll(".icon svg");
-        let isDragging = false;
-
-        const arrowVisibility = () => {
-            let scrollVal = Math.round(tabs.scrollLeft);
-            let maxScrollableWidth = tabs.scrollWidth - tabs.clientWidth;
-            sliderArrows[0].parentElement.style.display =
-                scrollVal > 0 ? "flex" : "none";
-
-            sliderArrows[1].parentElement.style.display =
-                maxScrollableWidth > scrollVal ? "flex" : "none";
-        };
-
-        sliderArrows.forEach((icon) => {
-            icon.addEventListener("click", () => {
-                tabs.scrollLeft += icon.id === "left" ? -210 : 210;
-                // arrowVisibility();
-                setTimeout(() => arrowVisibility(), 33);
-            });
-        });
+        const rightSvg = document.querySelector(".slider .right svg");
+        const leftSvg = document.querySelector(".slider .left svg");
+        const rightArrow = document.querySelector(".slider .right");
+        const leftArrow = document.querySelector(".slider .left");
 
         tab.forEach((oneTab) => {
             oneTab.addEventListener("click", () => {
@@ -42,21 +26,33 @@ export default function Experience() {
             });
         });
 
-        const dragging = (e) => {
-            if (!isDragging) return;
-            tabs.classList.add("dragging");
-            tabs.scrollLeft -= e.movementX;
+        const arrowVisibility = () => {
+            if (tabs.scrollLeft >= 21) {
+                leftArrow.classList.add("active");
+            } else {
+                leftArrow.classList.remove("active");
+            }
+
+            let maxScrollValue = tabs.scrollWidth - tabs.clientWidth - 21;
+
+            if (tabs.scrollLeft >= maxScrollValue) {
+                rightArrow.classList.remove("active");
+            } else {
+                rightArrow.classList.add("active");
+            }
+        };
+
+        rightSvg.addEventListener("click", () => {
+            tabs.scrollLeft += 210;
             arrowVisibility();
-        };
+        });
 
-        const dragStop = () => {
-            isDragging = false;
-            tabs.classList.remove("dragging");
-        };
+        leftSvg.addEventListener("click", () => {
+            tabs.scrollLeft -= 210;
+            arrowVisibility();
+        });
 
-        tabs.addEventListener("mousedown", () => (isDragging = true));
-        tabs.addEventListener("mousemove", dragging);
-        document.addEventListener("mouseup", dragStop);
+        tabs.addEventListener("scroll", arrowVisibility);
 
         // // cleanup the classes when the component unmounts
         // return () => {
@@ -70,7 +66,7 @@ export default function Experience() {
                 <p className="page-title exp-page-title">Work Experience</p>
 
                 <div className="slider">
-                    <div className="icon">
+                    <div className="left icon">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -107,7 +103,7 @@ export default function Experience() {
                         <li className="tab">this is co. 6</li>
                         <li className="tab">this is co. 7</li> */}
                     </ul>
-                    <div className="icon active">
+                    <div className="right icon active">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
