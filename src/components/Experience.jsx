@@ -3,7 +3,7 @@ import experiences from "../experiences.json";
 import Footer from "../components/Footer";
 
 export default function Experience() {
-    const [id, setId] = useState(1);
+    const [id, setId] = useState(experiences.length);
 
     function updateId(id) {
         setId(id);
@@ -107,7 +107,7 @@ export default function Experience() {
                             <li
                                 onClick={() => updateId(experience.id)}
                                 className={`tab ${
-                                    experience.id === 1 ? "tab-active" : ""
+                                    experience.id === experiences.length ? "tab-active" : ""
                                 }`}
                                 key={experience.id}
                             >
