@@ -259,65 +259,6 @@ body {
     line-height: 30px;
 }
 
-@media screen and (max-width: 500px) {
-    .navbar .logo {
-        font-size: 21px;
-    }
-
-    .mid-content {
-        padding: 0 7%;
-    }
-
-    .contact-page > :not(:last-child) {
-        margin-bottom: 33px;
-    }
-
-    .contact-page h1 {
-        font-size: 33px;
-    }
-
-    .contact-page .contact-desc {
-        line-height: 28px;
-        font-size: 18px;
-    }
-
-    .hero-text > :not(:last-child) {
-        margin-bottom: 21px;
-    }
-
-    .hero-text h1 {
-        font-size: 31px;
-    }
-
-    .hero-role,
-    .hero-desc {
-        font-size: 18px;
-    }
-
-    .hero-desc {
-        line-height: 21px;
-    }
-}
-
-@media screen and (max-width: 376px) {
-    .hero-text > :not(:last-child) {
-        margin-bottom: 12px;
-    }
-
-    .hero-text h1 {
-        font-size: 28px;
-    }
-
-    .hero-role,
-    .hero-desc {
-        font-size: 14px;
-    }
-
-    .hero-desc {
-        line-height: 18px;
-    }
-}
-
 .main-footer {
     display: flex;
     justify-content: space-between;
@@ -377,7 +318,6 @@ body {
     flex-direction: column;
     overflow: hidden;
     box-shadow: var(--primary-boxshadow);
-    height: 100%;
 }
 
 .project-card:hover {
@@ -634,4 +574,67 @@ ul.exp-list li::before {
     height: 21px;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%234169e1' class='size-6' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z' /%3E%3C/svg%3E");
+}
+
+@media screen and (max-width: 500px) {
+    .navbar .logo {
+        font-size: 21px;
+    }
+
+    .mid-content {
+        padding: 0 7%;
+    }
+
+    .contact-page > :not(:last-child) {
+        margin-bottom: 33px;
+    }
+
+    .contact-page h1 {
+        font-size: 33px;
+    }
+
+    .contact-page .contact-desc {
+        line-height: 28px;
+        font-size: 18px;
+    }
+
+    .hero-text > :not(:last-child) {
+        margin-bottom: 21px;
+    }
+
+    .hero-text h1 {
+        font-size: 31px;
+    }
+
+    .hero-role,
+    .hero-desc {
+        font-size: 18px;
+    }
+
+    .hero-desc {
+        line-height: 21px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .hero-text > :not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-role,
+    .hero-desc {
+        font-size: 14px;
+    }
+
+    .hero-desc {
+        line-height: 18px;
+    }
 }
