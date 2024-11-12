@@ -6,7 +6,7 @@ export default function Home() {
         <div className="below-nav">
             <section className="mid-content hero">
                 <div className="hero-text">
-                    <p className="hero-greet">Apprentice Software Engineer</p>
+                    <p className="hero-role">Apprentice Software Engineer</p>
                     <h1 className="hero-name">David Ochiel</h1>
                     <h1 className="hero-intro">
                         I'm passionate about building digital solutions.

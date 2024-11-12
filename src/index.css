@@ -235,7 +235,7 @@ body {
     font-weight: 900;
 }
 
-.hero-greet,
+.hero-role,
 .hero-text span {
     color: var(--secondary-color-blue);
     font-weight: 700;
@@ -246,7 +246,7 @@ body {
     transition: 0.3s;
 }
 
-.hero-greet,
+.hero-role,
 .hero-desc {
     font-size: 21px;
 }
@@ -257,6 +257,48 @@ body {
 
 .hero-desc {
     line-height: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar .logo {
+        font-size: 21px;
+    }
+
+    .hero-text > :not(:last-child) {
+        margin-bottom: 21px;
+    }
+
+    .hero-text h1 {
+        font-size: 31px;
+    }
+
+    .hero-role,
+    .hero-desc {
+        font-size: 18px;
+    }
+
+    .hero-desc {
+        line-height: 21px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .hero-text > :not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-role,
+    .hero-desc {
+        font-size: 14px;
+    }
+
+    .hero-desc {
+        line-height: 18px;
+    }
 }
 
 .main-footer {
@@ -506,7 +548,8 @@ body {
     /* background-color: brown; */
 }
 
-.exp-title, .exp-arrow {
+.exp-title,
+.exp-arrow {
     margin-right: 10px;
 }
 
