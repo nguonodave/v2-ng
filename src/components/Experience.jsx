@@ -54,6 +54,25 @@ export default function Experience() {
 
         tabs.addEventListener("scroll", arrowVisibility);
 
+        let dragging = false;
+
+        const drag = (e) => {
+            if (!dragging) return;
+            tabs.classList.add("dragging")
+            tabs.scrollLeft -= e.movementX
+        };
+
+        tabs.addEventListener("mousedown", () => {
+            dragging = true;
+        });
+
+        tabs.addEventListener("mousemove", drag);
+
+        document.addEventListener("mouseup", () => {
+            dragging = false;
+            tabs.classList.remove("dragging")
+        });
+
         // // cleanup the classes when the component unmounts
         // return () => {
         //     console.log("hey")
