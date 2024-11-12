@@ -271,11 +271,11 @@ body {
     .contact-page > :not(:last-child) {
         margin-bottom: 33px;
     }
-    
+
     .contact-page h1 {
         font-size: 33px;
     }
-    
+
     .contact-page .contact-desc {
         line-height: 28px;
         font-size: 18px;
@@ -523,7 +523,6 @@ body {
 }
 
 .tabs.dragging .tab {
-    user-select: none;
     pointer-events: none;
 }
 
@@ -534,6 +533,7 @@ body {
     color: var(--primary-background-black);
     border-radius: 33px;
     padding: 7px 12px;
+    user-select: none;
 }
 
 .slider .tabs .tab.tab-active,
