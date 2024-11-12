@@ -20,7 +20,7 @@ export default function Projects() {
                             key={project.id}
                         >
                             <img
-                                src={`../src/assets/images/${project.image}`}
+                                src={`../images/${project.image}`}
                                 alt=""
                                 className="block"
                             />
