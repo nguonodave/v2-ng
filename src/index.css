@@ -89,18 +89,18 @@ body {
     }
 }
 
-.menu .nav-link {
+.nav-link {
     border: solid 1px transparent;
     border-radius: 33px;
     padding: 7px 12px;
 }
 
-.menu .nav-link:hover {
+.nav-link:hover {
     border-color: var(--primary-color-white);
     transition: 0.3s;
 }
 
-.menu .nav-link.active-nav-link {
+.nav-link.active-nav-link {
     border: solid 1px var(--primary-color-white);
     color: var(--secondary-color-blue);
 }
@@ -593,6 +593,10 @@ ul.exp-list li::before {
 @media screen and (max-width: 500px) {
     .navbar .logo {
         font-size: 21px;
+    }
+    
+    .side-menu .content > :not(:last-child) {
+        margin-bottom: 35px;
     }
 
     .mid-content {

@@ -102,13 +102,13 @@ export default function Navbar() {
 
             <div className={`side-menu ${sideMenuOpen ? "active" : ""}`}>
                 <div className="content">
-                    <NavLink to="/about" className="" onClick={closeSideMenu}>
+                    <NavLink to="/about" className={navLinkClass} onClick={closeSideMenu}>
                         About
                     </NavLink>
 
                     <NavLink
                         to="/experience"
-                        className=""
+                        className={navLinkClass}
                         onClick={closeSideMenu}
                     >
                         Experience
@@ -116,13 +116,13 @@ export default function Navbar() {
 
                     <NavLink
                         to="/projects"
-                        className=""
+                        className={navLinkClass}
                         onClick={closeSideMenu}
                     >
                         Projects
                     </NavLink>
 
-                    <NavLink to="/contact" className="" onClick={closeSideMenu}>
+                    <NavLink to="/contact" className={navLinkClass} onClick={closeSideMenu}>
                         Contact
                     </NavLink>
                 </div>
