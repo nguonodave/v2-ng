@@ -512,6 +512,7 @@ body {
     font-weight: 900;
     display: flex;
     align-items: center;
+    /* flex-wrap: wrap; */
     /* background-color: brown; */
 }
 
@@ -574,6 +575,13 @@ ul.exp-list li::before {
     height: 21px;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%234169e1' class='size-6' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z' /%3E%3C/svg%3E");
+}
+
+@media screen and (max-width: 642px) {
+    .exp-header {
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 500px) {
