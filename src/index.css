@@ -442,7 +442,7 @@ body {
     /* background-color: white; */
     position: relative;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     border: var(--primary-border);
     border-radius: 33px;
     padding: 3px;
@@ -453,9 +453,13 @@ body {
     position: absolute;
     top: 0;
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     width: 77px;
+}
+
+.icon.active {
+    display: flex;
 }
 
 .slider .icon svg {
@@ -478,7 +482,7 @@ body {
         transparent
     );
     /* background: linear-gradient(90deg, red 70%, transparent); */
-    display: none;
+    /* display: none; */
 }
 
 .slider .icon:last-child {
@@ -503,8 +507,14 @@ body {
 .slider .tabs {
     display: flex;
     gap: 12px;
-    overflow-x: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     scroll-behavior: smooth;
+}
+
+.slider .tabs::-webkit-scrollbar {
+    display: none;
 }
 
 .slider .tabs.dragging {

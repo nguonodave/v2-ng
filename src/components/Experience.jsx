@@ -107,7 +107,7 @@ export default function Experience() {
                         <li className="tab">this is co. 6</li>
                         <li className="tab">this is co. 7</li> */}
                     </ul>
-                    <div className="icon">
+                    <div className="icon active">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
