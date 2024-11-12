@@ -387,6 +387,7 @@ body {
     border: var(--primary-border);
     border-radius: 33px;
     padding: 3px;
+    margin-top: 12%;
 }
 
 .slider .icon {
@@ -478,20 +479,24 @@ body {
 }
 
 .exp-details {
-    align-self: flex-start;
-}
-
-.exp-details {
     /* background-color: blue; */
     flex: 1;
     display: none;
     width: 100%;
+    padding-top: 33px;
 }
 
 .exp-details.active {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+}
+
+.details-content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 77rem;
+    /* background-color: red; */
 }
 
 .exp-header {

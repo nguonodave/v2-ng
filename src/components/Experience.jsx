@@ -6,7 +6,7 @@ export default function Experience() {
     const [id, setId] = useState(1);
 
     function updateId(id) {
-        setId(id)
+        setId(id);
     }
 
     useEffect(() => {
@@ -127,35 +127,44 @@ export default function Experience() {
                 </div>
 
                 {experiences.map((experience) => (
-                    <div key={experience.id} className={`exp-details ${id === experience.id ? "active" : ""}`}>
-                        <p className="exp-header">
-                            <span className="exp-title">
-                                {experience.title}
-                            </span>
+                    <div
+                        key={experience.id}
+                        className={`exp-details ${
+                            id === experience.id ? "active" : ""
+                        }`}
+                    >
+                        <div className="details-content">
+                            <p className="exp-header">
+                                <span className="exp-title">
+                                    {experience.title}
+                                </span>
 
-                            <span className="exp-arrow">&#8594;</span>
+                                <span className="exp-arrow">&#8594;</span>
 
-                            <span>
-                                <a
-                                    className="exp-company"
-                                    href={experience.companyLink}
-                                    target="_blank"
-                                >
-                                    {experience.companyName}
-                                </a>
-                            </span>
-                        </p>
+                                <span>
+                                    <a
+                                        className="exp-company"
+                                        href={experience.companyLink}
+                                        target="_blank"
+                                    >
+                                        {experience.companyName}
+                                    </a>
+                                </span>
+                            </p>
 
-                        <p className="exp-period">{experience.period}</p>
+                            <p className="exp-period">{experience.period}</p>
 
-                        <div className="exp-desc">
-                            <ul className="exp-list">
-                                {experience.experienceGains.map(
-                                    (experienceGain, index) => (
-                                        <li key={index}>{experienceGain}</li>
-                                    )
-                                )}
-                            </ul>
+                            <div className="exp-desc">
+                                <ul className="exp-list">
+                                    {experience.experienceGains.map(
+                                        (experienceGain, index) => (
+                                            <li key={index}>
+                                                {experienceGain}
+                                            </li>
+                                        )
+                                    )}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 ))}
