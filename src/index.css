@@ -726,12 +726,12 @@ ul.exp-list li::before, .about-text .skills li::before {
         font-size: 28px;
     }
 
-    .hero-role,
+    /* .hero-role,
     .hero-desc {
         font-size: 14px;
-    }
+    } */
 
-    .hero-desc {
+    /* .hero-desc {
         line-height: 18px;
-    }
+    } */
 }
