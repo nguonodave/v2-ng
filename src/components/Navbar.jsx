@@ -13,18 +13,18 @@ export default function Navbar() {
     useEffect(() => {
         function handleClick(event) {
             // Check if click target is outside the side-menu
-            const isSideMenu = event.target.closest('.side-menu');
-            const isHamburger = event.target.closest('.hamburger');
-            
+            const isSideMenu = event.target.closest(".side-menu");
+            const isHamburger = event.target.closest(".hamburger");
+
             // If click is outside both side-menu and hamburger, close the menu
             if (!isSideMenu && !isHamburger && sideMenuOpen) {
                 setSideMenuOpen(false);
             }
         }
 
-        document.addEventListener('click', handleClick);
+        document.addEventListener("click", handleClick);
         return () => {
-            document.removeEventListener('click', handleClick);
+            document.removeEventListener("click", handleClick);
         };
     }, [sideMenuOpen]);
 
@@ -86,9 +86,13 @@ export default function Navbar() {
                 </div>
 
                 <div className="top-left-nav">
-                    <NavLink className="resume nav-link royal-hover" to="">
+                    <a
+                        className="resume nav-link royal-hover"
+                        href="../nguonodave-resume-20241113.pdf"
+                        target="_blank"
+                    >
                         Resume
-                    </NavLink>
+                    </a>
 
                     <div className="hamburger">
                         <Ham
@@ -102,7 +106,11 @@ export default function Navbar() {
 
             <div className={`side-menu ${sideMenuOpen ? "active" : ""}`}>
                 <div className="content">
-                    <NavLink to="/about" className={navLinkClass} onClick={closeSideMenu}>
+                    <NavLink
+                        to="/about"
+                        className={navLinkClass}
+                        onClick={closeSideMenu}
+                    >
                         About
                     </NavLink>
 
@@ -122,7 +130,11 @@ export default function Navbar() {
                         Projects
                     </NavLink>
 
-                    <NavLink to="/contact" className={navLinkClass} onClick={closeSideMenu}>
+                    <NavLink
+                        to="/contact"
+                        className={navLinkClass}
+                        onClick={closeSideMenu}
+                    >
                         Contact
                     </NavLink>
                 </div>
