@@ -64,7 +64,7 @@ export default function Navbar() {
         <nav className="navbar">
             <div className="top-menu">
                 <NavLink className="logo royal-hover" to="/">
-                    dave
+                    Dave
                 </NavLink>
 
                 <div className="menu">

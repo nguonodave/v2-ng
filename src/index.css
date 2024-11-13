@@ -66,8 +66,8 @@ body {
 }
 
 .navbar .logo {
-    font-family: cursive;
-    font-size: 33px;
+    /* font-family: cursive; */
+    font-size: 25px;
 }
 
 .navbar .logo:hover {

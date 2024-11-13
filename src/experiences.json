@@ -22,7 +22,7 @@
         "companyLink": "https://www.dulchorifitness.com/",
         "period": "April 2023 - April 2024",
         "experienceGains": [
-            "Designed and developed a responsive front-end interface using HTML, CSS, and JavaScript.",
+            "Designed and developed a responsive front-end interface using HTML, CSS, JavaScript, and PostgreSQL.",
             "Designed the application architecture and its database schema.",
             "Created custom Django templates to generate dynamic web pages based on user input.",
             "Implemented user authentication and authorization using Django's built-in authentication framework.",
