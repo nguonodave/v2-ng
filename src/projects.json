@@ -19,7 +19,7 @@
             "Numpy",
             "Seaborn",
             "Streamlit",
-            "Sci-kit Learn",
+            "Scikit-Learn",
             "Pandas",
             "Matplotlib"
         ],

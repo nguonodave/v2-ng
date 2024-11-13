@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import { NavLink } from "react-router-dom";
 
 export default function About() {
     return (
@@ -20,12 +21,13 @@ export default function About() {
                             </p>
 
                             <p>
-                                These days, I'm shaping the future of tech at{" "}
+                                Currently, I'm{" "}
                                 <a
                                     href="https://www.zone01kisumu.ke/"
                                     target="_blank"
+                                    title="Recoding the world with African talent."
                                 >
-                                    <span>Zone01 Kisumu</span>
+                                    <span>shaping the future of tech at Zone01 Kisumu</span>
                                 </a>
                                 , where I get to build intuitive,
                                 high-performance platforms using a mix of modern
@@ -38,8 +40,8 @@ export default function About() {
                             <p>
                                 I'm always on the lookout for new challenges to
                                 tackle and cool projects to build. If you've got
-                                an idea or a problem to solve, let's chat and
-                                create something awesome!
+                                an idea or a problem to solve, <NavLink to="/contact"><span>let's chat</span></NavLink> and
+                                create something awesome.
                             </p>
 
                             <p>What's in my toolbox?</p>

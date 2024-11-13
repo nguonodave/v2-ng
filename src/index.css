@@ -564,16 +564,16 @@ body {
     font-weight: 900;
 }
 
-ul.exp-list li {
+ul.exp-list li, .about-text .skills li {
     padding-left: 33px;
     position: relative;
 }
 
-ul.exp-list li:not(:last-child) {
+ul.exp-list li:not(:last-child), .about-text .skills li:not(:last-child) {
     margin-bottom: 0.5em;
 }
 
-ul.exp-list li::before {
+ul.exp-list li::before, .about-text .skills li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -581,6 +581,11 @@ ul.exp-list li::before {
     height: 21px;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%234169e1' class='size-6' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z' /%3E%3C/svg%3E");
+}
+
+.about-text .skills li::before {
+    width: 18px;
+    height: 18px;
 }
 
 .about-wrapper {
@@ -595,8 +600,23 @@ ul.exp-list li::before {
     padding-right: 21px;
 }
 
+.about-text a span {
+    color: var(--secondary-color-blue);
+    /* font-weight: 700; */
+}
+
+.about-text a span:hover {
+    text-decoration: underline;
+    /* font-weight: 700; */
+}
+
 .paragraphs > * {
     margin-bottom: 21px;
+}
+
+.paragraphs > :last-child {
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .about-image {
@@ -610,6 +630,27 @@ ul.exp-list li::before {
     width: auto;
     height: auto;
     max-height: 21rem;
+}
+
+.about-text .skills span {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--secondary-color-white);
+}
+
+@media screen and (max-width: 819px) {
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-top: 35px;
+        align-self: center;
+    }
+
+    .about-image img {
+        height: 14rem;
+    }
 }
 
 @media screen and (max-width: 642px) {
