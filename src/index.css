@@ -706,6 +706,15 @@ ul.exp-list li::before, .about-text .skills li::before {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    .contact-page .contact-desc {
+        line-height: 25px;
+        font-size: 21px;
+    }
+    
+    .chat-btn {
+        padding: 7px 12px;
+    }
 }
 
 @media screen and (max-width: 376px) {
