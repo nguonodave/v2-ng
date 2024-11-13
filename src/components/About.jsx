@@ -9,13 +9,13 @@ export default function About() {
                     <div className="about-text">
                         <div className="paragraphs">
                             <p>
-                                Hey there, Dave here. I'm a coder,
-                                problem-solver, and tech explorer who thrives on
+                                Hey there, Dave here. I'm a
+                                tech problem-solver and explorer, who thrives on
                                 building things that work—and work well. My
-                                journey into the world of tech started back in
-                                high school, and it's been one wild ride ever
-                                since. I started with the basics of web
-                                development, and now I'm diving deep into
+                                journey into the world of tech started in my
+                                sophomore year at university, and it's been one
+                                wild ride ever since. I began with the basics of
+                                web development, and now I'm diving deep into
                                 full-stack applications that bring ideas to
                                 life.
                             </p>
@@ -27,7 +27,10 @@ export default function About() {
                                     target="_blank"
                                     title="Recoding the world with African talent."
                                 >
-                                    <span>shaping the future of tech at Zone01 Kisumu</span>
+                                    <span>
+                                        shaping the future of tech at Zone01
+                                        Kisumu
+                                    </span>
                                 </a>
                                 , where I get to build intuitive,
                                 high-performance platforms using a mix of modern
@@ -40,8 +43,11 @@ export default function About() {
                             <p>
                                 I'm always on the lookout for new challenges to
                                 tackle and cool projects to build. If you've got
-                                an idea or a problem to solve, <NavLink to="/contact"><span>let's chat</span></NavLink> and
-                                create something awesome.
+                                an idea or a problem to solve,{" "}
+                                <NavLink to="/contact">
+                                    <span>let's chat</span>
+                                </NavLink>{" "}
+                                and create something awesome.
                             </p>
 
                             <p>What's in my toolbox?</p>
@@ -49,10 +55,20 @@ export default function About() {
 
                         <div className="skills">
                             <ul>
-                                <li><span>Backend:</span> Golang, Python (Django)</li>
-                                <li><span>Frontend:</span> JavaScript (ES6), React</li>
-                                <li><span>Database:</span> SQL</li>
-                                <li><span>Core Web:</span> HTML, CSS</li>
+                                <li>
+                                    <span>Backend:</span> Golang, Python
+                                    (Django)
+                                </li>
+                                <li>
+                                    <span>Frontend:</span> JavaScript (ES6),
+                                    React
+                                </li>
+                                <li>
+                                    <span>Database:</span> SQL
+                                </li>
+                                <li>
+                                    <span>Core Web:</span> HTML, CSS
+                                </li>
                             </ul>
                         </div>
                     </div>
