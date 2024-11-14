@@ -51,7 +51,7 @@
         "id": 5,
         "image": "spark-bridge.png",
         "name": "Spark Bridge",
-        "description": "Spark Bridge is a Django-based web application that connects customers with service providers for various services and maintenance tasks. Kindly note that it is still under development improvements.",
+        "description": "Spark Bridge is a website built with Django that helps customers find service providers for different tasks and maintenance.",
         "tools": ["Django", "JS", "HTML", "CSS"],
         "links": {
             "github": "https://github.com/nguonodave/sparkbridge"

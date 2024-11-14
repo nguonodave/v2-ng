@@ -635,7 +635,6 @@ ul.exp-list li::before, .about-text .skills li::before {
 .about-text .skills span {
     font-weight: 700;
     font-size: 18px;
-    color: var(--secondary-color-white);
 }
 
 @media screen and (max-width: 819px) {

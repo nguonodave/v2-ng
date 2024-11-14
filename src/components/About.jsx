@@ -9,13 +9,13 @@ export default function About() {
                     <div className="about-text">
                         <div className="paragraphs">
                             <p>
-                                Hey there, Dave here. I'm a
-                                tech problem-solver and explorer, who thrives on
-                                building things that work—and work well. My
-                                journey into the world of tech started in my
-                                sophomore year at university, and it's been one
-                                wild ride ever since. I began with the basics of
-                                web development, and now I'm diving deep into
+                                Hey there, Dave here. I'm a tech problem-solver
+                                and explorer, who thrives on building things
+                                that work—and work well. My journey into the
+                                world of tech started in my sophomore year at
+                                university, and it's been one wild ride ever
+                                since. I began with the basics of web
+                                development, and now I'm diving deep into
                                 full-stack applications that bring ideas to
                                 life.
                             </p>
@@ -68,6 +68,10 @@ export default function About() {
                                 </li>
                                 <li>
                                     <span>Core Web:</span> HTML, CSS
+                                </li>
+                                <li>
+                                    <span>Development Tools & Platforms:</span>{" "}
+                                    Docker, Git, GitHub, Figma, Vercel, Netlify
                                 </li>
                             </ul>
                         </div>
