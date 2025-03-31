@@ -88,7 +88,7 @@ export default function Navbar() {
                 <div className="top-left-nav">
                     <a
                         className="resume nav-link royal-hover"
-                        href="../nguonodave-resume-20241113.pdf"
+                        href="../David-Ng'uono-Ochiel-CV.pdf"
                         target="_blank"
                     >
                         Resume
