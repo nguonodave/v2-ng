@@ -68,6 +68,10 @@ export default function Navbar() {
                 </NavLink>
 
                 <div className="menu">
+                    <NavLink to="/" className={navLinkClass}>
+                        Home
+                    </NavLink>
+
                     <NavLink to="/about" className={navLinkClass}>
                         About
                     </NavLink>
@@ -106,6 +110,14 @@ export default function Navbar() {
 
             <div className={`side-menu ${sideMenuOpen ? "active" : ""}`}>
                 <div className="content">
+                    <NavLink
+                        to="/"
+                        className={navLinkClass}
+                        onClick={closeSideMenu}
+                    >
+                        Home
+                    </NavLink>
+
                     <NavLink
                         to="/about"
                         className={navLinkClass}
