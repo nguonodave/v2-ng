@@ -1,10 +1,25 @@
 [
     {
+        "id": 4,
+        "title": "Full-Stack Software Engineer",
+        "companyName": "Zone01 Kisumu",
+        "companyLink": "https://www.zone01kisumu.ke/",
+        "period": "September 2025 - Present",
+        "experienceGains": [
+            "Architect and deliver full-stack applications from concept to deployment using a versatile tech stack that includes Go (Golang), Python, JavaScript, React, Next.js, SQL, and Git.",
+            "Drive technical decisions and adopt emerging technologies to enhance performance, scalability, and developer productivity.",
+            "Solve complex engineering challenges through analytical thinking, clean code practices, and a focus on long-term maintainability.",
+            "Partner closely with product managers, designers, and other engineers to translate business requirements into seamless, user-centric solutions.",
+            "Foster clear communication and alignment across teams by sharing technical insights and mentoring peers when needed.",
+            "Embrace continuous improvement, staying current with industry trends and refining development processes to deliver high-impact results."
+        ]
+    },
+    {
         "id": 3,
         "title": "Apprentice Software Engineer",
         "companyName": "Zone01 Kisumu",
         "companyLink": "https://www.zone01kisumu.ke/",
-        "period": "April 2024 - Present",
+        "period": "April 2024 - September 2025",
         "experienceGains": [
             "Collaborating on coding projects with peers, developing solutions in an agile, project-based environment.",
             "Developing problem-solving and debugging skills by tackling real-world programming challenges.",
