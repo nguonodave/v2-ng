@@ -387,7 +387,7 @@ body {
 .slider {
     /* background-color: white; */
     position: relative;
-    max-width: 100%;
+    max-width: 60%;
     overflow: hidden;
     border: var(--primary-border);
     border-radius: 33px;
