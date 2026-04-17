@@ -28,8 +28,7 @@ export default function About() {
               <p>
                 At{" "}
                 <a
-                  href="
-                  
+                  href="https://synergyinformatics.co.ke/"
                   target="_blank"
                   title="Providing tech solutions to the medical industry."
                 >
