@@ -1,60 +1,75 @@
 [
-    {
-        "id": 4,
-        "title": "Full-Stack Software Engineer",
-        "companyName": "Zone01 Kisumu",
-        "companyLink": "https://www.zone01kisumu.ke/",
-        "period": "September 2025 - Present",
-        "experienceGains": [
-            "Architect and deliver full-stack applications from concept to deployment using a versatile tech stack that includes Go (Golang), Python, JavaScript, React, Next.js, SQL, and Git.",
-            "Drive technical decisions and adopt emerging technologies to enhance performance, scalability, and developer productivity.",
-            "Solve complex engineering challenges through analytical thinking, clean code practices, and a focus on long-term maintainability.",
-            "Partner closely with product managers, designers, and other engineers to translate business requirements into seamless, user-centric solutions.",
-            "Foster clear communication and alignment across teams by sharing technical insights and mentoring peers when needed.",
-            "Embrace continuous improvement, staying current with industry trends and refining development processes to deliver high-impact results."
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Apprentice Software Engineer",
-        "companyName": "Zone01 Kisumu",
-        "companyLink": "https://www.zone01kisumu.ke/",
-        "period": "April 2024 - September 2025",
-        "experienceGains": [
-            "Collaborating on coding projects with peers, developing solutions in an agile, project-based environment.",
-            "Developing problem-solving and debugging skills by tackling real-world programming challenges.",
-            "Refining time management and self-discipline by adhering to project deadlines.",
-            "Enhancing teamwork and communication skills through peer code reviews and collaborative project development.",
-            "Participating in hackathons and safeguarding events, demonstrating resilience, teamwork, and the ability to perform under pressure.",
-            "Strengthening version control skills by using Git for collaboration and maintaining code repositories with peers.",
-            "Working on independent projects to learn new technologies and programming languages through self-guided, hands-on projects."
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Full Stack Engineer (Contractor)",
-        "companyName": "Dulchori Fitness",
-        "companyLink": "https://www.dulchorifitness.com/",
-        "period": "April 2023 - April 2024",
-        "experienceGains": [
-            "Designed and developed a responsive front-end interface using HTML, CSS, JavaScript, and PostgreSQL.",
-            "Designed the application architecture and its database schema.",
-            "Created custom Django templates to generate dynamic web pages based on user input.",
-            "Implemented user authentication and authorization using Django's built-in authentication framework.",
-            "Providing ongoing maintenance and support, including bug fixes, feature enhancements, and performance optimizations."
-        ]
-    },
-    {
-        "id": 1,
-        "title": "Industrial Attachee",
-        "companyName": "Synergy Informatics",
-        "companyLink": "https://synergyinformatics.co.ke/",
-        "period": "May 2022 - July 2022",
-        "experienceGains": [
-            "Developed and maintained web applications using a variety of programming languages and frameworks, including HTML, CSS, JavaScript, and Django.",
-            "Conducted quality assurance testing and debugging to ensure website functionality and resolved any issues that arose.",
-            "Designed and developed custom content management systems (CMS) to allow easy update and management of the website content.",
-            "Got introduced to the world of data (Data Science/Machine Learning/Artificial Intelligence)."
-        ]
-    }
+  {
+    "id": 5,
+    "title": "Software Engineer",
+    "companyName": "Synergy Informatics",
+    "companyLink": "https://synergyinformatics.co.ke/",
+    "period": "January 2026 - Present",
+    "experienceGains": [
+      "Build and maintain impactful med-tech solutions that improve healthcare workflows and real-world outcomes.",
+      "Design and develop clean, high-performance systems with a strong focus on reliability, scalability, and usability.",
+      "Solve complex engineering challenges through analytical thinking and a commitment to maintainable, efficient code.",
+      "Collaborate closely with cross-functional teams to deliver user-centered solutions aligned with healthcare needs.",
+      "Continuously refine development processes and adopt better approaches to improve product quality and delivery.",
+      "Stay current with evolving technologies and industry practices to drive meaningful, high-impact innovation."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Full-Stack Software Engineer",
+    "companyName": "Zone01 Kisumu",
+    "companyLink": "https://www.zone01kisumu.ke/",
+    "period": "October 2025 - December 2025",
+    "experienceGains": [
+      "Architect and deliver full-stack applications from concept to deployment using a versatile tech stack that includes Go (Golang), Python, JavaScript, React, Next.js, SQL, and Git.",
+      "Drive technical decisions and adopt emerging technologies to enhance performance, scalability, and developer productivity.",
+      "Solve complex engineering challenges through analytical thinking, clean code practices, and a focus on long-term maintainability.",
+      "Partner closely with product managers, designers, and other engineers to translate business requirements into seamless, user-centric solutions.",
+      "Foster clear communication and alignment across teams by sharing technical insights and mentoring peers when needed.",
+      "Embrace continuous improvement, staying current with industry trends and refining development processes to deliver high-impact results."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Apprentice Software Engineer",
+    "companyName": "Zone01 Kisumu",
+    "companyLink": "https://www.zone01kisumu.ke/",
+    "period": "January 2025 - October 2025",
+    "experienceGains": [
+      "Collaborating on coding projects with peers, developing solutions in an agile, project-based environment.",
+      "Developing problem-solving and debugging skills by tackling real-world programming challenges.",
+      "Refining time management and self-discipline by adhering to project deadlines.",
+      "Enhancing teamwork and communication skills through peer code reviews and collaborative project development.",
+      "Participating in hackathons and safeguarding events, demonstrating resilience, teamwork, and the ability to perform under pressure.",
+      "Strengthening version control skills by using Git for collaboration and maintaining code repositories with peers.",
+      "Working on independent projects to learn new technologies and programming languages through self-guided, hands-on projects."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Full Stack Engineer (Contractor)",
+    "companyName": "Dulchori Fitness",
+    "companyLink": "https://www.dulchorifitness.com/",
+    "period": "April 2023 - April 2024",
+    "experienceGains": [
+      "Designed and developed a responsive front-end interface using HTML, CSS, JavaScript, and PostgreSQL.",
+      "Designed the application architecture and its database schema.",
+      "Created custom Django templates to generate dynamic web pages based on user input.",
+      "Implemented user authentication and authorization using Django's built-in authentication framework.",
+      "Providing ongoing maintenance and support, including bug fixes, feature enhancements, and performance optimizations."
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Industrial Attachee",
+    "companyName": "Synergy Informatics",
+    "companyLink": "https://synergyinformatics.co.ke/",
+    "period": "May 2022 - July 2022",
+    "experienceGains": [
+      "Developed and maintained web applications using a variety of programming languages and frameworks, including HTML, CSS, JavaScript, and Django.",
+      "Conducted quality assurance testing and debugging to ensure website functionality and resolved any issues that arose.",
+      "Designed and developed custom content management systems (CMS) to allow easy update and management of the website content.",
+      "Got introduced to the world of data (Data Science/Machine Learning/Artificial Intelligence)."
+    ]
+  }
 ]

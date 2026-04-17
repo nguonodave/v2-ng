@@ -9,44 +9,44 @@ export default function About() {
           <div className="about-text">
             <div className="paragraphs">
               <p>
-                David Ochiel is a tech problem-solver and creative thinker,
-                currently shaping the future of technology at Zone01 Kisumu. As
-                an aspiring Data Engineer, he thrives on transforming complex
+                I am a tech problem-solver and creative thinker,
+                currently shaping the future of technology at Synergy Informatics. As
+                an aspiring Data Engineer, I thrive on transforming complex
                 problems into efficient, data-driven solutions that are both
                 reliable and innovative.
               </p>
 
               <p>
-                His journey into tech began in his sophomore year at university,
+                My journey into tech began in my sophomore year at university,
                 starting with web development and evolving into full-stack
-                applications and data engineering. Beyond coding, David's
-                creativity as a pencil artist has influenced his approach to
-                technology. He loves bringing ideas from imagination to life,
+                applications and data engineering. Beyond coding, my
+                creativity as a pencil artist has influenced my approach to
+                technology. I love bringing ideas from imagination to life,
                 whether through sketches or building scalable software systems.
               </p>
 
               <p>
                 At{" "}
                 <a
-                  href="https://www.zone01kisumu.ke/"
+                  href="
+                  
                   target="_blank"
-                  title="Recoding the world with African talent."
+                  title="Providing tech solutions to the medical industry."
                 >
-                  <span>Zone01 Kisumu</span>
+                  <span>Synergy Informatics</span>
                 </a>
-                , he has built intuitive, high-performance platforms that
-                reflect his commitment to clean code, efficiency, and staying
-                ahead in an ever-evolving tech landscape.
+                , I develop advanced med-tech solutions, building intuitive, 
+                high-performance platforms that reflect my commitment to clean code, 
+                efficiency, and staying ahead in an ever-evolving tech landscape.
               </p>
 
               <p>
-                Looking ahead, David aims to leverage his expertise in data
+                Looking ahead, I aim to leverage my expertise in data
                 engineering and analytics to drive impactful solutions that
                 address global challenges, blending creativity, technology, and
-                ethical practices. His achievements in building functional,
-                user-centered platforms and his dedication to continuous
-                learning demonstrate both his skill set and his potential for
-                future leadership in tech.
+                ethical practices. I've built functional, user-centered 
+                platforms and consistently invest in learning, strengths that 
+                reflect both my skill set and potential for future leadership in tech.
               </p>
 
               <p>What's in my toolbox?</p>
